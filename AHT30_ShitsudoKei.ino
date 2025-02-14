@@ -6,6 +6,8 @@
 
 void setup() {
   Serial.begin(115200);
+  pinMode(21,INPUT_PULLUP);
+  pinMode(22,INPUT_PULLUP);
   Wire.begin(21,22);  // for ESP32; other arduino uses A4, A5
   delay(1000);
 }
